@@ -5,21 +5,21 @@
 class Lx < Formula
   desc ""
   homepage "https://github.com/chebread/lx"
-  version "1.0.0"
+  version "1.0.1"
   license "AGPL-3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/chebread/lx/releases/download/v1.0.0/lx_darwin_amd64.tar.gz"
-      sha256 "7edb988bb73dc9c6d1d8fb9cda3412c57a94f85ff030f24054ce9dc2db701b00"
+      url "https://github.com/chebread/lx/releases/download/v1.0.1/lx_darwin_amd64.tar.gz"
+      sha256 "7104bba6ea0e70762ab505b7591f1115a5f9f8c80574f9051565223a1553b601"
 
       def install
         bin.install "lx"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/chebread/lx/releases/download/v1.0.0/lx_darwin_arm64.tar.gz"
-      sha256 "8bb48fdfa94a44cf6ee788bc4a610482680cc38addb69243762bd34dbcf83292"
+      url "https://github.com/chebread/lx/releases/download/v1.0.1/lx_darwin_arm64.tar.gz"
+      sha256 "18ec069f6d6465a8692ec28a82f6d2e7bf75cc2108cac44744f65b8e3d22feca"
 
       def install
         bin.install "lx"
@@ -29,15 +29,15 @@ class Lx < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/chebread/lx/releases/download/v1.0.0/lx_linux_amd64.tar.gz"
-      sha256 "a6c6ed0cb962e23d46d22e1958b2969a20ccf91879cf6cb1ed3d14af56579d9f"
+      url "https://github.com/chebread/lx/releases/download/v1.0.1/lx_linux_amd64.tar.gz"
+      sha256 "6199457d8db4457cd0f6f54e85fa93e2a29393e94a68c5eac13df354e67e4cdb"
       def install
         bin.install "lx"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/chebread/lx/releases/download/v1.0.0/lx_linux_arm64.tar.gz"
-      sha256 "b216809e2f5f53018261359516f2133463487bceb8e882bc846de435c022ab53"
+      url "https://github.com/chebread/lx/releases/download/v1.0.1/lx_linux_arm64.tar.gz"
+      sha256 "35abb8ee3e80ed631bcd290120953696d48fd3b67a89b1297ac158ff79f888e9"
       def install
         bin.install "lx"
       end
