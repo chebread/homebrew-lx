@@ -5,21 +5,21 @@
 class Lx < Formula
   desc "Interface by Human, Logic by AI."
   homepage "https://github.com/chebread/lx"
-  version "2.1.0"
+  version "0.1.0"
   license "AGPL-3.0"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/chebread/lx/releases/download/v2.1.0/lx_darwin_amd64.tar.gz"
-    sha256 "415511ac7f42bf30d26461b5fe076823b184bb66dbf7dd383bbebbd7eb0c6604"
+    url "https://github.com/chebread/lx/releases/download/v0.1.0/lx_darwin_amd64.tar.gz"
+    sha256 "5f57895656527dc64350059bdf6089efe135a1cb9a7ed5747c9c3a779d735d52"
 
     def install
       bin.install "lx"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/chebread/lx/releases/download/v2.1.0/lx_darwin_arm64.tar.gz"
-    sha256 "cc0cae52aaf7d3d44714d6fa55f1bb92c797435d431db89ddd31d165118cf61f"
+    url "https://github.com/chebread/lx/releases/download/v0.1.0/lx_darwin_arm64.tar.gz"
+    sha256 "462f7728624f007f16449e380d287daa029c21f1c366dbbe501ec7b0562a66eb"
 
     def install
       bin.install "lx"
