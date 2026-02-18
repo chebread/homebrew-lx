@@ -5,21 +5,21 @@
 class Lx < Formula
   desc "Controllable AI for Gophers."
   homepage "https://github.com/chebread/lx"
-  version "0.1.3"
+  version "0.1.4"
   license "AGPL-3.0"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/chebread/lx/releases/download/v0.1.3/lx_darwin_amd64.tar.gz"
-    sha256 "ff30220d156f6a91968e6244050864ed0c26ee251962b64b27a41fff6f9b9393"
+    url "https://github.com/chebread/lx/releases/download/v0.1.4/lx_darwin_amd64.tar.gz"
+    sha256 "36555daea9d175b6b9215f918be6b1345c51f061fc4dd107e2ce43952d744f24"
 
     def install
       bin.install "lx"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/chebread/lx/releases/download/v0.1.3/lx_darwin_arm64.tar.gz"
-    sha256 "209fd4b4e810f67a076dc39c55a2c34bfb58f1d32bab513c719ee4d5b18fd79d"
+    url "https://github.com/chebread/lx/releases/download/v0.1.4/lx_darwin_arm64.tar.gz"
+    sha256 "f67c6b8bcae8fb9222eda2f1aed261abeaa2e63a7ade2fa93c5aecb18ff2a00e"
 
     def install
       bin.install "lx"
