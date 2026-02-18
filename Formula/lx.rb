@@ -11,7 +11,7 @@ class Lx < Formula
 
   if Hardware::CPU.intel?
     url "https://github.com/chebread/lx/releases/download/v0.1.5/lx_darwin_amd64.tar.gz"
-    sha256 "2725a2c88396dfbc02bbc292c1d01a012ea34efcd8bfcb7944e70c7e6599d16f"
+    sha256 "9f2d02d87b14d0cfedee98ce52e481a5681468d23e6aa896f4aaae4eb66ce439"
 
     def install
       bin.install "lx"
@@ -19,7 +19,7 @@ class Lx < Formula
   end
   if Hardware::CPU.arm?
     url "https://github.com/chebread/lx/releases/download/v0.1.5/lx_darwin_arm64.tar.gz"
-    sha256 "9989861b60de71ce05747981f00bc8c16e63d1a37a1703b79c20ceed10d0bdb6"
+    sha256 "07bee264848c92e70a9565bb0fab2f4691dad750f41f73d73c109031cd581577"
 
     def install
       bin.install "lx"
